@@ -11,15 +11,15 @@ hints:
   - class: DockerRequirement
     dockerPull: antismash/antismash
 
-arguments:
-  - prefix: "--outputfolder"
-    valueFrom: $(inputs.outputfolder)
-
 inputs:
   - id: sequence
     type: File
     inputBinding:
       position: 1
+  - id: outputfolder
+    type: string
+    inputBinding:
+      prefix: "--outputfolder"
   - id: verbose
     type: ["null", boolean]
     inputBinding:
