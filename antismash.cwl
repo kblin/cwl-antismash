@@ -7,8 +7,6 @@ description: "Run antiSMASH"
 
 baseCommand: run_antismash.py
 
-stdout: stdout.txt
-
 hints:
   - class: DockerRequirement
     dockerPull: antismash/antismash
@@ -29,10 +27,6 @@ inputs:
 
 
 outputs:
-  - id: stdout
-    type: File
-    outputBinding:
-      glob: stdout.txt
   - id: result
     type: File
     outputBinding:
