@@ -1,0 +1,9 @@
+{
+    "sequence": {
+        "class": "File",
+        "path": "nisin.gbk"
+    },
+    "verbose": true,
+    "debug": false,
+    "outputfolder": "nisin"
+}
